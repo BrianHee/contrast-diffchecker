@@ -3,7 +3,7 @@ import React from 'react';
 import logopng from './images/logo.png';
 import NavBar from './components/navbar/NavBar';
 import DiffChecker from './components/diffchecker/DiffChecker';
-import TextInput from './components/form/TextInput';
+import DiffForm from './components/form/DiffForm';
 
 import './App.css';
 
@@ -14,7 +14,7 @@ const App = () => {
             <h1>App</h1>
             <NavBar />
             <DiffChecker />
-            <TextInput />
+            <DiffForm />
         </div>
     )
 };
