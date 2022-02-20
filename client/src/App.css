@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #F0FFFF;
+  max-width: 100%;
+}
+
+body, h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
