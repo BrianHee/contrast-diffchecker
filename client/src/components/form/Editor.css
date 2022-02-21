@@ -1,0 +1,41 @@
+.CodeMirror {
+  border: 1px solid #DCDCDC !important;
+  /* display: inline-block; */
+  width: 45%;
+  height: 50hv;
+  float: left;  
+}
+
+.CodeMirror-focused {
+  border: 2px solid #6495ED !important;
+}
+
+.cm-s-neo .CodeMirror-linenumber {
+  color: #808080 !important;
+}
+
+.cm-s-neo .CodeMirror-gutters {
+  background-color: #F8F8F8 !important;
+}
+
+.form-container {
+  margin: 0 auto;
+  max-width: 95%;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  height: 50hv;
+  flex-direction: column;
+  border: 1px solid #ddd;
+}
+
+.left-editor {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.right-editor {
+}
+
+.diff-form {
+}

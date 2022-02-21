@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from 'react';
 // import CodeMirror from 'codemirror';
-import { Button } from '@material-ui/core';
+
+import '../Editor.css';
+
+
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/neo.css';
 import 'codemirror/mode/javascript/javascript';
 import { Controlled } from 'react-codemirror2';
 
-import './Editor.css';
+
+
 
 export default class Editor extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            value: this.props.code
+            value: this.props.code,
+            editorName: this.props.editorName
         }
     }
     
@@ -32,11 +37,12 @@ export default class Editor extends React.Component {
         const options = { lineNumbers: true, theme: 'neo' };
 
         return (
-            <div className='editor-container'>
+            <div>
                 <Controlled
                     value={value}
                     onBeforeChange={this.handleChange}
                     options={options}
+                    className={this.props.editorName}
                 />
             </div>
         )

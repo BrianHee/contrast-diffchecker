@@ -7,8 +7,10 @@ const DiffForm = () => {
 
     return (
         <div className='form-container'>
-            <Editor />
-            <Editor />
+            <form className='diff-form'>
+                <Editor editorName='left-editor'/>
+                <Editor editorName='right-editor'/>
+            </form>
         </div>
     );
 };
