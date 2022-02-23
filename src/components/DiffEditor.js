@@ -54,22 +54,21 @@ window.DIFF_EQUAL = DIFF_EQUAL;
 const DiffEditor = (props) => {
     const { leftCode, rightCode } = props;
 
-
-
-    const original = 'hello';
-
     useEffect(() => {
         const diff = CodeMirror.MergeView(document.getElementById('dv'), {
-            value: leftCode,
-            origLeft: rightCode,
-            // origRight: props.rightCode,
+            value: rightCode,
+            origLeft: leftCode,
             lineNumbers: true,
             highlightDifferences: true,
             showDifferences: true,
             revertButtons: false,
             connect: 'align',
+            readOnly: true,
+            lineWrapping: true
         });
-    }, [])
+
+        console.log('proprety has changed', leftCode);
+    }, [leftCode, rightCode])
 
     return(
         <div id='dv'>

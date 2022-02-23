@@ -19,8 +19,10 @@ const Editor = (props) => {
                 onBeforeChange={handleChange}
                 value={value}
                 className='cm-editor'
-                options={{ lineNumbers: true }}
-                lineWrapping='true'
+                options={{
+                    lineNumbers: true,
+                    lineWrapping: true
+                }}
             />
         </div>
     )
