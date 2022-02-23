@@ -1,7 +1,6 @@
 import React from 'react';
 
 import 'codemirror/lib/codemirror.css';
-import 'codemirror/mode/javascript/javascript';
 import { Controlled } from 'react-codemirror2-react-17';
 
 const Editor = (props) => {
@@ -21,6 +20,7 @@ const Editor = (props) => {
                 value={value}
                 className='cm-editor'
                 options={{ lineNumbers: true }}
+                lineWrapping='true'
             />
         </div>
     )
