@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom'
-import { Alert } from '@mui/material';
+import { Alert, Button } from '@mui/material';
 
 import 'codemirror/addon/merge/merge.js';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/addon/merge/merge.css';
 import CodeMirror from 'codemirror';
 import diff_match_patch, {DIFF_INSERT, DIFF_DELETE, DIFF_EQUAL} from 'diff-match-patch';
+import { motion } from 'framer-motion';
 
 window.diff_match_patch = diff_match_patch;
 window.DIFF_INSERT = DIFF_INSERT;
@@ -30,22 +31,41 @@ const DiffEditor = () => {
             readOnly: true,
             lineWrapping: true
         });
-
-        console.log(isIdentical);
-    }, []);
+    }, [leftCode, rightCode]);
 
     return (
+        <motion.div
+            initial={{ opacity:0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
         <div className='form-container'>
-            <div className='diff-editor' id='dv'>
+            <div className='diff-name-container'>
+                <div className='dif-names'>Original Text</div>
+                <div className='dif-names'>Altered Text</div>
+            </div>
+            <div className='diff-container'>
+                <div className='diff-editor' id='dv'></div>
             </div>
             <div className='button-container'>
-                <Link to='/'><button className='diff-button'>Clear</button></Link>
+                <Link to='/' style={{ textDecoration: 'none' }}>
+                    <Button
+                        variant='outlined'
+                        sx={{
+                            borderRadius: 3,
+                            width: 100,
+                            height: 34
+                        }}>
+                            Clear
+                    </Button>
+                </Link>
             </div>
             {isIdentical ? 
                 <Alert severity='success'>The two texts are identical!</Alert>
                 : null
             }
         </div>
+        </motion.div>
     )
 };
 
