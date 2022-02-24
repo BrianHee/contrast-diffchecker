@@ -8,9 +8,9 @@ const NavBar = () => {
         <nav className ='navbar'>
             <Link to='/'><img src={logo} alt='logo' height='60' /></Link>
             <ul className='navbar-ul'>
-                <li><Link to='/'>Diff</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li>Feedback</li>
+                <li><Link to='/' style={{ textDecoration: 'none' }}>Diff</Link></li>
+                <li><Link to='/about' style={{ textDecoration: 'none' }}>About</Link></li>
+                <li><Link to='/feedback' style={{ textDecoration: 'none' }}>Feedback</Link></li>
             </ul>
         </nav>
     )

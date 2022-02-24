@@ -7,6 +7,7 @@ import About from './pages/About';
 import DiffEditor from './components/DiffEditor';
 import Error from './pages/Error';
 import Background from './components/Background';
+import Feedback from './pages/Feedback';
 
 import './index.css';
 
@@ -19,6 +20,7 @@ const App = () => {
               <Route path='/' element={<DiffForm />} />
               <Route path='/diff' element={<DiffEditor />} />
               <Route path='/about' element={<About />} />
+              <Route path='/feedback' element={<Feedback />} />
               <Route path='*' element={<Error />} />
             </Routes>
           <Background />
