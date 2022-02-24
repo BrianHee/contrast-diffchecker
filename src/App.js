@@ -3,6 +3,7 @@ import NavBar from'./components/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import DiffEditor from './components/DiffEditor';
+import Error from './pages/Error';
 
 import './index.css';
 
@@ -12,10 +13,10 @@ const App = () => {
       <NavBar />
       <div className="App">
         <Routes>
-          <Route path='/' element={<DiffForm />}>
-            <Route path='/diff' element={<DiffEditor />} />
-          </Route>
+          <Route path='/' element={<DiffForm />} />
+          <Route path='/diff' element={<DiffEditor />} />
           <Route path='/about' element={<About />} />
+          <Route path='*' element={<Error />} />
         </Routes>
       </div>
     </BrowserRouter>

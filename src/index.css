@@ -79,12 +79,6 @@ body {
     word-break: break-word;
 } */
 
-.CodeMirror-merge-pane {
-  display: inline-block;
-  white-space: normal;
-  vertical-align: top;
-}
-
 .diff-editor .CodeMirror {
     cursor: default;
 }
@@ -99,10 +93,6 @@ body {
 
 .CodeMirror-merge-gap {
     display: none;
-}
-
-.CodeMirror-merge-r-chunk {
-    background: #c7ffce;
 }
 
 .CodeMirror-merge-l-chunk {
