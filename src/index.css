@@ -293,10 +293,11 @@ a:visited {
 .error-container {
     background-color: rgba(255, 255, 252, 0.6);
     height: 50vh;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    /* margin-left: 25vw;
+    margin-right: 25vw; */
+    margin: auto;
     border-radius: 10px;
-    max-width: 95vw;
+    width: 700px;
     margin-top: 30px;
     box-shadow: 0 10px 10px rgba(154,160,185,.1), 0 15px 40px rgba(166,173,201,.2);
     overflow: hidden;
@@ -342,11 +343,12 @@ footer {
 
 .about-container {
     background-color: rgba(255, 255, 252, 0.6);
-    height: 50vh;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    height: auto;
+    /* margin-left: 25vw;
+    margin-right: 25vw; */
     border-radius: 10px;
-    max-width: 95vw;
+    margin: auto;
+    width: 700px;
     margin-top: 30px;
     box-shadow: 0 10px 10px rgba(154,160,185,.1), 0 15px 40px rgba(166,173,201,.2);
     overflow: hidden;
@@ -357,15 +359,29 @@ footer {
     margin-bottom: 0;
 }
 
+.about-container h3 {
+    padding: 0 5%;
+}
+
+.about-container h4 {
+    padding: 0 5%;
+    background: #ffc7c8;
+    background-clip: content-box;
+}
+
+.about-container u {
+    border-bottom: 2px green dashed;
+    text-decoration: none;
+}
+
 /* Feedback */
 
 .feedback-container {
     background-color: rgba(255, 255, 252, 0.6);
     height: 350px;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    margin: auto;
     border-radius: 10px;
-    max-width: 95vw;
+    width: 750px;
     margin-top: 30px;
     box-shadow: 0 10px 10px rgba(154,160,185,.1), 0 15px 40px rgba(166,173,201,.2);
     overflow: hidden;
@@ -382,8 +398,8 @@ footer {
     margin-top: 0;
 }
 
-.feedback-container b {
-    color: #00ffff
+b {
+    color: #00ffff;
 }
 
 .feedback-container h4 {
