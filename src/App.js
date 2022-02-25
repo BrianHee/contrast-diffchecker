@@ -8,6 +8,7 @@ import DiffEditor from './components/DiffEditor';
 import Error from './pages/Error';
 import Background from './components/Background';
 import Feedback from './pages/Feedback';
+import Footer from './components/Footer';
 
 import './index.css';
 
@@ -15,6 +16,7 @@ const App = () => {
   return (
       <AnimatePresence exitBeforeEnter>
         <div className="App">
+        <Background />
         <NavBar />
             <Routes>
               <Route path='/' element={<DiffForm />} />
@@ -23,7 +25,7 @@ const App = () => {
               <Route path='/feedback' element={<Feedback />} />
               <Route path='*' element={<Error />} />
             </Routes>
-          <Background />
+          <Footer />
         </div>
       </AnimatePresence>
   );

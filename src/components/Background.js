@@ -2,8 +2,8 @@ import React from 'react';
 
 const Background = () => {
     return (    
-    <div class="background-area" >
-        <ul class="background-letters">
+    <div className="background-area" >
+        <ul className="background-letters">
                 <li>c</li>
                 <li>o</li>
                 <li>n</li>

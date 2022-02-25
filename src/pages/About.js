@@ -8,9 +8,9 @@ const About = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <h1>
-                About
-            </h1>
+            <div className='about-container'>
+                <h1>About</h1>
+            </div>
         </motion.div>
     );
 };
