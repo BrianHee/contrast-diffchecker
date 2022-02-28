@@ -6,7 +6,7 @@ body {
     margin: 0;
     max-width: 100%;
     overflow-x: hidden;
-    font-family: DM Sans;
+    font-family: 'DM Sans';
     font-weight: bold;
 }
 
@@ -139,6 +139,10 @@ nav > .navbar-ul {
     letter-spacing: 0.75px;
     justify-content: space-around;
     width: 25vw;
+}
+
+a {
+    color: #000;
 }
 
 a:visited {
