@@ -1,4 +1,4 @@
-<p align='center'><img src='https://contrast.herokuapp.com/favicon.ico' width='150' /></p>
+<p align='center'><img src='https://contrast.herokuapp.com/contrast.svg' width='150' /></p>
 
 # 🤔 About
 
@@ -27,4 +27,4 @@ npm install
 # 📟 Tech Stack
 
 * [React](https://reactjs.org)
-<a>hello</a>
+<a href='www.google.com'>hello</a>
