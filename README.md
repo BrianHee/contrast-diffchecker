@@ -1,4 +1,5 @@
 <p align='center'><img src='https://contrast.herokuapp.com/contrast.svg' width='150' /></p>
+<p align='center'><img src='https://github.com/BrianHee/contrast-diffchecker/blob/main/public/contrast.svg' width='150' /></p>
 
 # 🤔 About
 
@@ -26,5 +27,5 @@ npm install
 
 # 📟 Tech Stack
 
-* [React](https://reactjs.org)
-<a href='www.google.com'>hello</a>
+* [React](https://reactjs.org/)
+* [CodeMirror](https://codemirror.net/)
