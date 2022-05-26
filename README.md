@@ -1,5 +1,30 @@
-# contrast-diffchecker
+<p align='center'><img src='https://contrast.herokuapp.com/favicon.ico' width='150' /></p>
 
-# installation
-Clone the repository and use the following to install all necessary dependencies:
-```npm install```
+# 🤔 About
+
+This is the repository for Contrast diff checker.
+
+# 🧑‍💻 Live Site
+
+For the live site, please visit the following link: [Contrast](https://contrast.herokuapp.com)
+
+# ✍️ Cloning the Repo
+
+To clone the repository for project, run the following in the directory of choice:
+
+```
+git clone https://github.com/BrianHee/contrast-diffchecker
+```
+
+# 📡 Installing Dependencies
+
+To install all necessary dependencies, run the following:
+
+```
+npm install
+```
+
+# 📟 Tech Stack
+
+* [React](https://reactjs.org)
+<a>hello</a>
