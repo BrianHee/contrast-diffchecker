@@ -11,6 +11,7 @@ import Feedback from './pages/Feedback';
 import Footer from './components/Footer';
 
 import './index.css';
+import ROUTES from './constants/routes';
 
 const App = () => {
   return (
@@ -19,11 +20,9 @@ const App = () => {
         <Background />
         <NavBar />
             <Routes>
-              <Route path='/' element={<DiffForm />} />
-              <Route path='/diff' element={<DiffEditor />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/feedback' element={<Feedback />} />
-              <Route path='*' element={<Error />} />
+              {ROUTES.map((route, idx) =>(
+                <Route path={route.path} element={route.element} key={idx}/>
+              ))}
             </Routes>
           <Footer />
         </div>

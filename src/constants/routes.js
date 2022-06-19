@@ -2,8 +2,10 @@ import DiffEditor from "../components/DiffEditor";
 import DiffForm from "../components/DiffForm";
 import About from "../pages/About";
 import Feedback from "../pages/Feedback";
+import Error from '../pages/Error';
 
-const Routes = [
+
+const ROUTES = [
     {
         name: 'home',
         path: '/',
@@ -26,7 +28,9 @@ const Routes = [
     },
     {
         name: 'error',
-        path: '/*',
+        path: '*',
         element: <Error />
     }
 ]
+
+export default ROUTES;
