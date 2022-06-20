@@ -16,8 +16,8 @@ const About = () => {
                 </h3>
                 <h1>How do I use <b>contrast</b>?</h1>
                 <h3><b>1.</b> Start by pasting two samples of texts in the input areas.</h3>
-                <h3><b>2.</b> Submit the texts for diff viewing with the submit button.</h3>
-                <h3><b>3.</b> Visualize the differences in text with <b>contrast</b>'s diff vieweing interface.</h3>
+                <h3><b>2.</b> Submit the texts for differences with the submit button.</h3>
+                <h3><b>3.</b> Visualize the differences in the texts with <b>contrast</b>'s diff viewing interface.</h3>
                 <h3>After having submitted two samples of text
                      the user will be prompted with a diff viewer:
                 </h3>
