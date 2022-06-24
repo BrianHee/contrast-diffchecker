@@ -22,7 +22,7 @@ const About = () => {
                      the user will be prompted with a diff viewer:
                 </h3>
                 <h4>
-                     Lines that have been altered will be highlighted
+                     In the right pane, lines that have been altered will be highlighted
                      in red, while differences will be
                      <u> underlined in green</u>.
                 </h4>
