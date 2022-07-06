@@ -25,7 +25,7 @@ To install all necessary dependencies, run the following:
 npm install
 ```
 
-# 📟 Tech Stack
+# 📟 Technologies
 
 * [React](https://reactjs.org/)
 * [CodeMirror](https://codemirror.net/)
