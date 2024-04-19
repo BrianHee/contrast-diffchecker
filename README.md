@@ -7,7 +7,7 @@ the textual differences between the two files.
 
 # 🧑‍💻 Live Site
 
-For the live site, please visit the following link: [Contrast](https://contrast.herokuapp.com)
+For the live site, please visit the following link: [Contrast](https://contrastdiff.netlify.app/)
 
 # ✍️ Cloning the Repo
 
