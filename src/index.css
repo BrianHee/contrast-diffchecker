@@ -73,47 +73,47 @@ ul {
 /* Diff Editor */
 
 .diff-name-container {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
+    display: flex !important;
+    justify-content: space-around !important;
+    padding-top: 15px !important;
 }
 
 .diff-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 1rem !important;
 }
 
 .diff-editor {
-    height: 320px;
+    height: 320px !important;
 }
 
 .diff-editor .CodeMirror {
-    cursor: default;
-    height: 300px;
+    cursor: default !important;
+    height: 300px !important;
 }
 
 .diff-editor .CodeMirror-cursor {
-    border-left: none;
+    border-left: none !important;
 }
 
 .diff-editor .CodeMirror-focused {
-    border: 1px solid #DCDCDC;
+    border: 1px solid #DCDCDC !important;
 }
 
 .CodeMirror-merge {
-    border: none;
+    border: none !important;
 }
 
 .CodeMirror-merge-gap {
-    display: none;
+    display: none !important;
 }
 
 .CodeMirror-merge-l-chunk {
-    background: #ffc7c8;
+    background: #ffc7c8 !important;
 }
 
-.CodeMirror-merge-2pane .CodeMirror-merge-pane { width: 48.8%; }
+.CodeMirror-merge-2pane .CodeMirror-merge-pane { width: 48.8% !important; }
 
 /* Button - Material UI */
 
